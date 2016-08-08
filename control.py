@@ -6,6 +6,7 @@ port1 = 5
 ports = [port0, port1]
 
 def set_ports():
+    GPIO.setmode(GPIO.BCM)
     for port in ports:
         GPIO.setup(port, GPIO.OUT)
 
