@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-from time import sleep
+import time
 
 port0 = 3
 port1 = 5
