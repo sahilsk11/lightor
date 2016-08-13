@@ -25,7 +25,7 @@ def ports_on():
 
 set_ports()
 ports_on()
-time.sleep(1)
+time.sleep(5)
 stop_port(3)
 stop_port(18)
 time.sleep(1)
