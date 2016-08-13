@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import datetime
 
 port0 = 3
 port1 = 5
@@ -14,8 +15,11 @@ def start_port(port):
     GPIO.output(port, GPIO.LOW)
     print "on"
 
+def stop_port(port):
+    GPIO.output(port, GPIO.LOW)
+    print "off"
     
 set_ports()
 start_port(3)
 time.sleep(1)
-print "off"
+print "finished at " + datetime.datetime.now()
