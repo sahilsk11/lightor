@@ -11,13 +11,15 @@ def set_ports():
         GPIO.setup(port, GPIO.OUT)
 
 def start_port(port):
+    GPIO.output(port, GPIO.LOW)
+    time.sleep(1)
     GPIO.output(port, GPIO.HIGH)
 
-def stop_port(port):
-    GPIO.output(port, GPIO.LOW)
     
 set_ports()
 start_port(3)
 time.sleep(3)
-stop_port(port)
+start_port(5)
 time.sleep(3)
+time.sleep(3)
+GPIO.clean_up()
