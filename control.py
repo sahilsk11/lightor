@@ -22,4 +22,5 @@ def stop_port(port):
 set_ports()
 start_port(3)
 time.sleep(1)
+stop_port(3)
 print "finished at " + str(datetime.datetime.now())
