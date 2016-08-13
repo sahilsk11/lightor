@@ -18,9 +18,13 @@ def start_port(port):
 def stop_port(port):
     GPIO.output(port, GPIO.HIGH)
     print "off"
-    
+
+def ports_on():
+    for port in ports:
+        start_port(port)
+
 set_ports()
-start_port(3)
+ports_on()
 time.sleep(1)
 stop_port(3)
 time.sleep(1)
