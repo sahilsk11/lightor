@@ -4,7 +4,7 @@ import datetime
 
 port0 = 3
 port1 = 18
-ports = [port0]
+ports = [port0, port1]
 
 def set_ports():
     GPIO.setmode(GPIO.BCM)
