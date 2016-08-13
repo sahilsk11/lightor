@@ -18,4 +18,3 @@ def start_port(port):
     
 set_ports()
 start_port(3)
-time.sleep(3)
