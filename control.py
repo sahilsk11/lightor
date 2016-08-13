@@ -3,7 +3,7 @@ import time
 import datetime
 
 port0 = 3
-port1 = 5
+port1 = 18
 ports = [port0, port1]
 
 def set_ports():
@@ -25,7 +25,8 @@ def ports_on():
 
 set_ports()
 ports_on()
-time.sleep(1)
+time.sleep(5)
 stop_port(3)
+stop_port(18)
 time.sleep(1)
 print "finished at " + str(datetime.datetime.now())
