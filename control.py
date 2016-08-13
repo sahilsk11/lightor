@@ -19,7 +19,3 @@ def start_port(port):
 set_ports()
 start_port(3)
 time.sleep(3)
-start_port(5)
-time.sleep(3)
-time.sleep(3)
-GPIO.clean_up()
