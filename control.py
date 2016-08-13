@@ -12,10 +12,7 @@ def set_ports():
 
 def start_port(port):
     GPIO.output(port, GPIO.LOW)
-    print "low"
-    time.sleep(1)
-    GPIO.output(port, GPIO.HIGH)
-    print "high"
+    print "on"
 
     
 set_ports()
