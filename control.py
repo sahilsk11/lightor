@@ -16,11 +16,12 @@ def start_port(port):
     print "on"
 
 def stop_port(port):
-    GPIO.output(port, GPIO.LOW)
+    GPIO.output(port, GPIO.HIGH)
     print "off"
     
 set_ports()
 start_port(3)
 time.sleep(1)
 stop_port(3)
+time.sleep(1)
 print "finished at " + str(datetime.datetime.now())
