@@ -22,6 +22,7 @@ def stop_port(port):
 def ports_on():
     for port in ports:
         start_port(port)
+        time.sleep(1)
 
 set_ports()
 ports_on()
