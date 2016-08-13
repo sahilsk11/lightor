@@ -3,7 +3,7 @@ import time
 import datetime
 
 port0 = 3
-port1 = 5
+port1 = 18
 ports = [port0, port1]
 
 def set_ports():
