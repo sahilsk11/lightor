@@ -1,0 +1,10 @@
+.center {
+	text-align: center;
+	display: block;
+	margin: 0px auto;
+}
+
+.section {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
