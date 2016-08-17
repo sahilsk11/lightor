@@ -1,0 +1,105 @@
+<html lang="en">
+
+	<head>
+		<link href="bootstrap.css" rel="stylesheet">
+		<link href="organize.css" rel="stylesheet">
+		<script src="bootstrap.js"></script>
+		<link href="icon.png" rel="icon">
+		<title>Lightor</title>
+
+		<script>
+			var relays = 2;
+			function getValue(object) {
+				alert(object.id);
+				alert(object.checked);
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--navbar-->
+		<div class="content">
+
+			<div class="header text-center">
+				<span><img src="logo.png" class="logo"></span>
+				<span><p class="header-text">Control your landscape lights straight from your device.</p></spam>
+			</div>
+
+			<table class="status">
+				<tr>
+					<td><button class="center btn btn-default">Turn All Lights On</button></td>
+					<td><button class="center btn btn-default">Turn All Lights Off</button></td>
+				</tr>
+			</table>
+
+
+
+			<div class="container-fluid element">
+				<table class="status" border="1px solid black">
+					<tr>
+						<th class="text-center">Zone Name</th>
+						<th class="text-center">Current State</th>
+					</tr>
+					<tr>
+						<td>NAME</td>
+						<td><div class="center">
+							<label class="switch">
+								<input onclick="getValue(this)" type="checkbox" checked="true" id="ID">
+  								<div class="slider round"></div>
+								<div class="button-label">STATE</div>
+						</label></td>
+					</tr>
+					<tr>
+						<td>Lights</td>
+						<td><div class="center">
+							<label class="switch">
+								<input type="checkbox">
+  								<div class="slider round"></div>
+								<div class="button-label">On</div>
+						</label></td>
+					</tr>
+					<tr>
+						<td>Lights</td>
+						<td><div class="center">
+							<label class="switch">
+								<input type="checkbox">
+  								<div class="slider round"></div>
+  								<div class="button-label">On</div>
+							</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td>Lights</td>
+						<td><div class="center">
+							<label class="switch">
+								<input type="checkbox">
+  								<div class="slider round"></div>
+								<div class="button-label">On</div>
+						</label></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<br>
+
+		<div class="credit-bar container-fluid">
+			<br>
+			<span class="col-xs-6">
+				<p class="credit-color">Contact:
+					<a href="mailto:iotspace.tech@gmail.com" >
+						iotspace.tech@gmail.com
+					</a>
+				</p>
+			</span>
+			<span class="col-xs-6 right">
+				<p class="credit-color">Website design by <a href="http://www.github.com/sahilsk11" target="_blank">Sahil Kapur</a>	<br>
+				</p>
+			</span>
+			<a class="center">View on GitHub</a>
+		</div>
+
+	</body>
+
+</html>
+
